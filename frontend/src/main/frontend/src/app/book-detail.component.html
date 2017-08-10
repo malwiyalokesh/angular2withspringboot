@@ -1,0 +1,21 @@
+<div *ngIf="book" class="container text-center">
+    <table class="table table-bordered">
+        <thead class="text-center">
+            <tr>
+                <th>ISBN</th>
+                <th>TITLE</th>
+                <th>AUTHOR</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{book.isbn}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+            </tr>
+        </tbody>
+        
+        
+    </table>
+</div>
