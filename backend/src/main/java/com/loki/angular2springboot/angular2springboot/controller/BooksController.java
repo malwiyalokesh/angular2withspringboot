@@ -15,7 +15,7 @@ import java.util.List;
  * Created by Lokesh on 03-08-2017.
  */
 @RestController
-@RequestMapping("/books")
+@RequestMapping("/api/books")
 public class BooksController {
 
     @Autowired
