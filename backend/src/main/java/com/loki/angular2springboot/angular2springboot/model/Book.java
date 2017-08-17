@@ -15,14 +15,16 @@ public class Book {
     private String isbn;
     private String title;
     private String author;
+    private String image;
 
     public Book() {
     }
 
-    public Book(String isbn, String title, String author) {
+    public Book(String isbn, String title, String author, String image) {
         this.isbn = isbn;
         this.title = title;
         this.author = author;
+        this.image = image;
     }
 
     public long getId() {
@@ -41,6 +43,10 @@ public class Book {
         return author;
     }
 
+    public String getImage() {
+        return image;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -48,6 +54,7 @@ public class Book {
                 ", isbn='" + isbn + '\'' +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
+                ", image='" + image + '\'' +
                 '}';
     }
 }

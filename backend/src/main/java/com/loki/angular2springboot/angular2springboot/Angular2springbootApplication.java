@@ -22,9 +22,9 @@ public class Angular2springbootApplication {
 
 	@Bean
 	public CommandLineRunner createSomeBooks() {
-		Arrays.asList(new Book[]{new Book("bk01","XML Developer's Guide","Gambardella"),
-				new Book("bk02","Midnight Rain","Ralls"),
-				new Book("bk03","Immortals of meluha","Amish")}).stream().forEach(book -> bookRepository.save(book));
+		Arrays.asList(new Book[]{new Book("bk01","Immortals of meluha","Amish Tripathi","The_Immortals_Of_Meluha.jpg"),
+				new Book("bk02","2 States","Chetan Bhagat","2states.jpg"),
+				new Book("bk03","DaVinci Code","Dan Brown","DaVinciCode.jpg")}).stream().forEach(book -> bookRepository.save(book));
 
 		return null;
 	}

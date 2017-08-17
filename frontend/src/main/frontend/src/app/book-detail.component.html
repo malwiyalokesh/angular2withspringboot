@@ -2,14 +2,17 @@
     <table class="table table-bordered">
         <thead class="text-center">
             <tr>
+				<th>IMAGE</th>
                 <th>ISBN</th>
                 <th>TITLE</th>
                 <th>AUTHOR</th>
+				
             </tr>
             
         </thead>
         <tbody>
             <tr>
+				<td><img class="img-responsive" src="assets/images/{{book.image}}" style="width:100px;height:150px;" alt="book image"></td>
                 <td>{{book.isbn}}</td>
                 <td>{{book.title}}</td>
                 <td>{{book.author}}</td>
